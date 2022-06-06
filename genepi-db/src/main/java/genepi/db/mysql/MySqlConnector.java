@@ -65,7 +65,7 @@ public class MySqlConnector extends AbstractDatabaseConnector {
 			try {
 				dataSource = createDataSource();
 
-				dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+				dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 				dataSource.setUrl("jdbc:mysql://" + host + "/" + database
 						+ "?autoReconnect=true&allowMultiQueries=true&rewriteBatchedStatements=true");
 				dataSource.setUsername(user);
